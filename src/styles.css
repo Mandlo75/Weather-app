@@ -1,3 +1,20 @@
 h1 {
   color: blue;
 }
+
+input {
+  padding: 1px 2px;
+  border-width: 2px;
+  border-color: internal light dark (rgb(118, 118, 118), rgb(133, 133, 133));
+}
+.btn {
+  padding: 0.75rem 0.37rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-width: 1px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
