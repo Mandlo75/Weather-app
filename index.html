@@ -16,7 +16,6 @@
   </head>
   <body>
     <div class="container">
-      <h1>Weather Forecast</h1>
       <form action="submit"></form>
       <div class="col-9">
         <input
@@ -29,6 +28,29 @@
         <input type="submit" class="btn btn-primary w-100" value="Search" />
       </div>
     </div>
+    <h1>Bulawayo</h1>
+    <div class="WeatherInfo">
+      <div class="row">
+        <div class="col-6">
+          <h1>Bulawayo</h1>
+          <ul>
+            <li><span>Thursday 10:23</span>, scattered clouds</li>
+            <li>
+              Humidity: <strong>75%</strong>, Wind: <strong>2.24km/h</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-8">
+          <div class="temperature-container d-flex justify-content-end">
+            <canvas width="52" height="52"></canvas>
+            <div>
+              <span class="temperature">9</span><span class="unit">°C</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="src\index.js"></script>
   </body>
 </html>
