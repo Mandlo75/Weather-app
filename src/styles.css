@@ -34,6 +34,10 @@ input {
   border-width: 2px;
   border-color: internal light dark (rgb(118, 118, 118), rgb(133, 133, 133));
 }
+img {
+  margin: 10px 0;
+}
+
 .Weather .btn {
   background: #885df1;
   border: none;
