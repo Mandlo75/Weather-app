@@ -85,3 +85,7 @@ img {
   font-weight: 700;
   line-height: 1.5;
 }
+.forecast-temperature-min {
+  margin-left: 10px;
+  opacity: 0.6;
+}
