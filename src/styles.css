@@ -8,7 +8,7 @@ h1 {
 body {
   display: table-cell;
   vertical-align: middle;
-  border: 5px solid rgb(202, 198, 198);
+
   background: linear-gradient(
     to top,
     rgb(251, 194, 235) 0%,
