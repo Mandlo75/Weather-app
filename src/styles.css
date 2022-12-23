@@ -50,3 +50,11 @@ input {
   line-height: 48px;
   margin: 20px 0 10px;
 }
+.temperature {
+  color: #212121;
+  font-size: 80px;
+  font-weight: 400;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 10px;
+}
