@@ -6,10 +6,14 @@ h1 {
   margin-inline-end: 0px;
 }
 body {
-  background: #f9f7fe;
   display: table-cell;
   vertical-align: middle;
   border: 5px solid white;
+  background: linear-gradient(
+    to top,
+    rgb(251, 194, 235) 0%,
+    rgb(166, 193, 238) 100%
+  );
 }
 
 html,
