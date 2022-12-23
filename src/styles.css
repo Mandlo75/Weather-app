@@ -123,8 +123,3 @@ footer {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   width: 100%;
 }
-.Weather {
-  max-width: 900px;
-  margin: auto;
-  padding: 60px;
-}
