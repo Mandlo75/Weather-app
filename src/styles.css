@@ -107,3 +107,8 @@ footer {
   margin: auto;
   padding: 60px;
 }
+.form-control {
+  font-weight: 400;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
