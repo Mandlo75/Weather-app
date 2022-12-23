@@ -24,6 +24,11 @@ li {
   margin-bottom: 5px;
 }
 
+li strong {
+  color: #f65282;
+  font-weight: 400;
+}
+
 input {
   padding: 1px 2px;
   border-width: 2px;
