@@ -7,7 +7,17 @@ h1 {
 }
 body {
   background: #f9f7fe;
-  display: block;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+html,
+body {
+  height: 100%;
+}
+html {
+  display: table;
+  margin: auto;
 }
 
 ul {
