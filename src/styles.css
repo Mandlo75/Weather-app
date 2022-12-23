@@ -5,6 +5,15 @@ h1 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
 
 input {
   padding: 1px 2px;
