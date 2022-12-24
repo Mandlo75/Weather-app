@@ -18,18 +18,25 @@
   <body>
     <div class="container">
       <div class="Weather">
-        <form action="submit"></form>
-        <div class="col-9">
-          <input
-            type="search"
-            placeholder="Enter a city.."
-            class="form-control search-input"
-          />
-
-          <div class="col-3 p-0">
-            <input type="submit" class="btn btn-primary w-100" value="Search" />
+        <form id="form-search" class="mb-3">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              placeholder="Enter a city.."
+              class="form-control"
+              id="city-input"
+              autocomplete="off"
+              ;
+            />
+          </div>
+          <div class="col-3">
+            <input type="submit" value="Search" class="btn btn-primary w-100" />
           </div>
         </div>
+        </div>
+        </div>
+      </form>
 
         <div class="WeatherInfo">
           <div class="row">
