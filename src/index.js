@@ -37,6 +37,8 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed);
 
+  celsiustemperature = response.data.main.temp;
+
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatdate(response.data.dt * 1000);
 
@@ -64,5 +66,25 @@ function handleSubmit(event) {
 
 let form = document.querySelector("#form-search");
 form.addEventListener("submit", handleSubmit);
+
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsiustemperature * 9) / 5 + 52;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function convertToCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiustemperature);
+}
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
+
+let celsiustemperature = null;
 
 search("Bulawayo");
