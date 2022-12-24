@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <title>WeatherApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -33,12 +34,14 @@
         <div class="WeatherInfo">
           <div class="row">
             <div class="col-6">
-              <h1>Bulawayo</h1>
+              <h1 id="city">Bulawayo</h1>
               <ul>
-                <li><span>Thursday 10:23</span>, scattered clouds</li>
                 <li>
-                  Humidity: <strong>75%</strong>, Wind:
-                  <strong>2.24km/h</strong>
+                  <span>Thursday 10:23</span>,<span id="description"></span>
+                </li>
+                <li>
+                  Humidity: <strong id="humidity"></strong>%, Wind:
+                  <strong id="wind"></strong>km/hr
                 </li>
               </ul>
             </div>
@@ -46,7 +49,8 @@
               <div class="temperature-container d-flex justify-content-end">
                 <img src="src\images\icon1.png" alt="picture of weather icon" />
                 <div>
-                  <span class="temperature">9</span><span class="unit">°C</span>
+                  <span class="temperature" id="temperature"></span
+                  ><span class="unit">°C|F</span>
                 </div>
               </div>
             </div>

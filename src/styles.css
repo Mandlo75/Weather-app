@@ -43,6 +43,7 @@ li {
   line-height: 20px;
   list-style: none;
   margin-bottom: 5px;
+  text-transform: capitalize;
 }
 
 li strong {
