@@ -37,5 +37,6 @@ function displayTemperature(response) {
 }
 
 let apiKey = "836f4ef75ccee844372d8db2b2350564";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
+let city = "Bulawayo";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
