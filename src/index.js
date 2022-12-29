@@ -31,7 +31,7 @@ function displayForecast() {
     <div class="col">
             <div class="WeatherForecastPreview">
               <div class="forecast-time">${day}</div>
-              <img src="src\images\icon2.png" alt="picture of weather icon" />
+              <img src=" http://openweathermap.org/img/wn/02d@2x.png" width="42" >
               <div class="forecast-temperature">
                 <span class="forecast-temperature-max">13°</span
                 ><span class="forecast-temperature-min">9°</span>
