@@ -20,6 +20,28 @@ function formatdate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+  let forecastHTML = "";
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col">
+            <div class="WeatherForecastPreview">
+              <div class="forecast-time">${day}</div>
+              <img src="src\images\icon2.png" alt="picture of weather icon" />
+              <div class="forecast-temperature">
+                <span class="forecast-temperature-max">13°</span
+                ><span class="forecast-temperature-min">9°</span>
+              </div>
+            </div>
+          </div>`;
+  });
+
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -88,3 +110,4 @@ celsiusLink.addEventListener("click", convertToCelsius);
 let celsiustemperature = null;
 
 search("Bulawayo");
+displayForecast();
